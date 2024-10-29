@@ -1,0 +1,95 @@
+
+.card {
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: var(--spacing-2xl);
+  width: 100%;
+  max-width: 46rem;
+  color: var(--stone-600);
+
+  .recipe-image {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .recipe-title  {
+    margin-top: var(--spacing-lg);
+
+    font-size: 2.25rem;
+    font-weight: 100;
+    color: var(--stone-900);
+  }
+
+  .recipe-description {
+    margin-top: var(--spacing-lg);
+
+    font-size: 1rem;
+    line-height: 150%;
+  }
+
+  .preparation-time {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+
+    background-color: var(--rose-50);
+
+    h3 {
+      font-family: var(--font-family-body) ;
+      color: var(--rose-800);
+    }
+
+    ul {
+      margin-top: var(--spacing-md);
+
+      display: block;
+      list-style-type: disc;
+      color: var(--stone-600);
+    }
+  }
+
+  .section {
+    padding-block: var(--spacing-lg);
+
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--stone-100);
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      color: var(--brown-800);
+      margin-bottom: var(--spacing-lg);
+    }
+  }
+
+  .nutrition-table {
+    width: 100%;
+    margin-top: var(--spacing-lg);
+
+    tbody {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    tr {
+      display: grid;
+      justify-items: flex-start;
+      padding: var(--spacing-md) var(--spacing-2xl);
+      grid-template-columns: 1fr 1fr;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid var(--stone-150);
+      }
+    }
+
+    th {
+      font-weight: 400;
+    }
+
+    td {
+      font-weight: bold;
+      color: var(--brown-800);
+    }
+  }
+}

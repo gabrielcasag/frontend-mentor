@@ -1,0 +1,72 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 40px;
+
+  --font-family-title: 'Young Serif', serif;
+  --font-family-body: 'Outfit',sans-serif;
+}
+
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-title);
+}
+
+ul, ol {
+  padding-inline-start: var(--spacing-lg);
+}
+
+li {
+  padding-inline-start: var(--spacing-lg);
+  padding-block-end: var(--spacing-sm);
+  color: var(--stone-600);
+}
+
+li::marker, ol::marker {
+  color: var(--rose-800);
+  font-weight: bold;
+}
+
+body {
+  font-family: var(--font-family-body);
+
+  background-color: var(--stone-100);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+  padding: 5rem 0;
+}
